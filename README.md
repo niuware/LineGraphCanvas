@@ -1,32 +1,46 @@
 # LineGraphCanvas
 ===
-*LineGraphCanvas* is a control for drawing line graphs in any Universal Windows Platform app.
+![LineGraphCanvas Screenshot](http://niuware.com/github/LineGraphCanvas/screen_0.png)
+
+*LineGraphCanvas* is a Universal Windows Platform custom control for drawing a time progressive Line Graph (Portable to WPF as well).
+
+## Installation
+
+After pulling down the repository add the folders and files (Controls, Converters and Styles) to your project.
 
 ## Usage
 
 Simply add the control to the desired Page.xaml file as follows:
 
 ```Xaml
-<LineGraphCanvas x:Name="myLineGraphCanvas" XScale="10.0" YScale="1.0" />
+<!-- Remember to add first the namespace -->
+xmlns:controls="using:Niuware.Controls"
+...
+
+<!-- XScale is the length of the line (X axis), YScale is the scalar for the value -->
+<controls:LineGraphCanvas x:Name="myLineGraphCanvas" XScale="10.0" YScale="1.0" />
 ```
 
-Then in the constructor of your Page.cs, initialize the LineGraphCanvas class adding as many lines as you need to represent in the graph:
+Then in the constructor of your code Page.cs file, initialize as many values as you need to draw in the the LineGraphCanvas control:
 
 ```C#
 this.InitializeComponent();
 ...
 
+// If you want you can use a Label for the graph
 myLineGraphCanvas.Label = "My Graph Label";
+
+// You can graph different values in the same Line Graph
 myLineGraphCanvas.AddLineGraph(0.0, "Value Label", new SolidColorBrush(Windows.UI.Colors.XXX));
 ...
 myLineGraphCanvas.AddLineGraph(0.0, "Other N Value Label", new SolidColorBrush(Windows.UI.Colors.XXX));
 ```
 
-For the drawing loop you can choose between:
+Finally, for the drawing loop you can choose one of the following methods:
 
-####CompositionTarget.Rendering 
+#####CompositionTarget.Rendering 
 
-Use the rendering event of the XAML engine as follows:
+Using the rendering event of the XAML engine:
 
 ```C#
 using Windows.UI.Xaml.Media;
@@ -47,9 +61,9 @@ private void CompositionTarget_Rendering(object sender, object e)
 }
 ```
 
-####DispatcherTimer
+#####DispatcherTimer
 
-Or any other Timer class and set its Tick event to update the graph:
+Using a Timer class and set its Tick event:
 
 ```C#
 this.InitializeComponent();
