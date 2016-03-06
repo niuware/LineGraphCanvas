@@ -1,6 +1,6 @@
 # LineGraphCanvas
 ===
-![LineGraphCanvas Screenshot](http://niuware.com/github/LineGraphCanvas/screen_0.png)
+![LineGraphCanvas Screenshot](http://niuware.com/github/LineGraphCanvas/screen.png)
 
 *LineGraphCanvas* is a Universal Windows Platform custom control for drawing a time progressive Line Graph (Portable to WPF as well).
 
@@ -83,6 +83,8 @@ private void Timer_Tick(object sender, object e)
   });
 }
 ```
+
+You can use the Zoom In/Zoom Out buttons to update the Line Graph scale in real time.
 
 ##Author
 
