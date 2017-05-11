@@ -37,7 +37,7 @@ myLineGraphCanvas.AddLineGraph(0.0, "Other N Value Label", new SolidColorBrush(W
 
 Finally, for the drawing loop you can choose one of the following methods:
 
-#####CompositionTarget.Rendering 
+##### CompositionTarget.Rendering 
 
 Using the rendering event of the XAML engine:
 
@@ -60,7 +60,7 @@ private void CompositionTarget_Rendering(object sender, object e)
 }
 ```
 
-#####DispatcherTimer
+##### DispatcherTimer
 
 Using a Timer class and set its Tick event:
 
@@ -89,10 +89,10 @@ You can use the Zoom In/Zoom Out buttons to update the Line Graph scale in real 
 
 You can see a working example of this control in the **MSBandViewer** application, [available here](https://github.com/niuware/MSBandViewer).
 
-##Author
+## Author
 
 This application was coded entirely by Erik Lopez.
 
-##License
+## License
 
 Licensed under [MIT License](https://github.com/niuware/LineGraphCanvas/blob/master/LICENSE)
