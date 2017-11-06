@@ -1,5 +1,4 @@
 # LineGraphCanvas
-![LineGraphCanvas Screenshot](http://niuware.com/github/LineGraphCanvas/images/screen.png)
 
 *LineGraphCanvas* is a Universal Windows Platform custom control for drawing a time progressive Line Graph (Portable to WPF as well).
 
