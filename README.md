@@ -92,7 +92,7 @@ You can see a working example of this control in the **MSBandViewer** applicatio
 
 ## Author
 
-This application was coded entirely by Erik Lopez.
+This application was coded by Erik Lopez.
 
 ## License
 
