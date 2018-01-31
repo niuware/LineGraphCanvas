@@ -1,5 +1,7 @@
 # LineGraphCanvas
 
+![LineGraphCanvas](http://niuware.github.io/public/assets/LineGraphCanvas/images/screen.png)
+
 *LineGraphCanvas* is a Universal Windows Platform custom control for drawing a time progressive Line Graph (Portable to WPF as well).
 
 ## Installation
@@ -36,7 +38,7 @@ myLineGraphCanvas.AddLineGraph(0.0, "Other N Value Label", new SolidColorBrush(W
 
 Finally, for the drawing loop you can choose one of the following methods:
 
-##### CompositionTarget.Rendering 
+#### With CompositionTarget.Rendering 
 
 Using the rendering event of the XAML engine:
 
@@ -59,7 +61,7 @@ private void CompositionTarget_Rendering(object sender, object e)
 }
 ```
 
-##### DispatcherTimer
+#### With DispatcherTimer
 
 Using a Timer class and set its Tick event:
 
